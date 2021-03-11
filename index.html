@@ -374,18 +374,23 @@
                 </div>
                 <div class="newsletter">
                     <form class="newsletter-form">
-                        <label class="newsletter-label">Подпишитесь на рассылку
+                        <label class="newsletter-title" for="mail">
+                            Подпишитесь на рассылку
                         </label>
-                        <input 
+                        <div class="newsletter-items">
+                        <input
+                        class="newsletter-input" 
                         type="mail"
                         name="mail"
+                        id="mail"
                         placeholder="E-mail">
+                        <button class="newsletter-button" type="submit">Подписаться
+                            <svg class="footer-newsletter-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-send-1"></use>
+                            </svg>   
+                        </button>
+                        </div>
                     </form>
-                    <button class="newsletter-button button" type="submit">Подписаться
-                        <svg class="footer-newsletter-icon" width="24" height="24">
-                            <use href="./img/icons.svg#icon-send-1"></use>
-                        </svg>   
-                    </button>
                 </div> 
             </div>
         </div>
