@@ -43,8 +43,7 @@
         <div class="container">
             <section class="hero-main container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button link" data-modal-open>Заказать услугу</button>
-                <!-- <a class="button link " href="#"></a> -->
+                <button class="button link" type="submit" data-modal-open>Заказать услугу</button>
             </section>
         </div>
         </div>
@@ -317,7 +316,7 @@
         </section>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-button" data-modal-close>
+                <button class="modal-button" type="submit" data-modal-close>
                     <svg class="close-button" width="11" height="11">
                         <use href="./img/icons.svg#icon-close-1"></use>
                     </svg>
@@ -331,7 +330,6 @@
                             <use href="./img/icons.svg#icon-person-1"></use>
                         </svg>
                     </div>
-
                     <div class="form-tel">
                         <label for="tel">Телефон</label>
                         <input type="text" name="tel" id="tel">
@@ -339,7 +337,6 @@
                             <use href="./img/icons.svg#icon-phone-1"></use>
                         </svg>
                     </div>
-
                     <div class="form-mail">
                         <label for="email">Почта</label>
                         <input type="mail" name="email" id="email">
@@ -347,27 +344,27 @@
                             <use href="./img/icons.svg#icon-email-1"></use>
                         </svg>
                     </div>
-
                     <div class="form-textarea">
                         <label for="comment">Комментарий</label>
                         <textarea name="Комментарий" placeholder="Введите текст" id="comment"></textarea>
                     </div>
-
                     <div class="modal-checkbox">
-                        <input type="checkbox"
-                        name="agreement"
-                        id="agreement"
-                        value="">
-                        <label for="agreement">Соглашаюсь с рассылкой и принимаю
-                            <span>
-                                <a href="#">Условия договора</a>
+                        <label class="checkbox-label">
+                            <input  class="checkbox"
+                            type="checkbox"
+                            name="agreement"
+                            value=" ">
+                            <!-- <div class="checkbox-icon"> -->
+                            <svg class="icon-check" width="16" height="15">
+                                <use href="./img/icons.svg#icon-check-1"></use>
+                            </svg>   
+                            <span class="checkbox-text">
+                            Соглашаюсь с рассылкой и принимаю
                             </span>
+                                <a class="checkbox-text-href" href="#">Условия договора</a>
                         </label>
                     </div>
-
-                    <div class="modal-button-send">
-                        <button>Отправить</button>
-                    </div>
+                    <button class="button-send" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
